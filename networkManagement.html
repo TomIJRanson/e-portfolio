@@ -88,12 +88,46 @@
 								Kumar, S. & Amin, R., (2021). Mitigating distributed denial of service attack: Blockchainand software-defined networking based approach, networkmodel with future research challenges, s.l.: Wiley.</p>
 							<p>
 								Prakash, A., Murali, S., Bhargav, T. S. S. & Natarajan, B., (2016). Detection and Mitigation of Denial of Service Attacks Using Stratified Architecture. Procedia Computer Science, Volume 87, pp. 275-280.</p>
+							<p></p>
+							<h3>Summary Post</h3>
+							<p>
+								Based on the responses from my peers, strides are being made in consideration of cyber security in the medical industry. It’s very apparent though that a lot more ground needs to be covered and more in-depth analysis needs to take place.</p>
+							<p>
+								In my initial post I laid out the idea of a “three strikes” system to lock out repeated attempts to log into the system. It was highlighted by Beran Necat the importance of multi-factor authentication (Necat, 2021) within this idea, and the importance of speed of access by Austin Mundy (Mundy, 2021). When deployed thoughtfully and efficiently it can be implemented adding only a small amount of time to individual logins. The presence of MFA in a login procedure will not only increase the security of that process but also act as a deterrent to hackers. The system, depending on how valuable the target is perceived, could be deemed to be not worth the effort of cracking the security (Soni, 2021). With the huge virtual landscape of websites and servers, a hacker will always be able to find an easier target.</p>
+							<p>
+								As a proposal to mitigate down time brought on by Denial-of-Service attacks (DoS), Edward Van Biljon suggested the concept of a hot site (Van Biljon, 2021). While a hot site could be of some assistance in instances like this it would first have to be carefully considered exactly what hardware would be getting replicated. While there is worth in duplicating training equipment in an off-site location, copying clinical hardware wouldn’t carry much benefit. In the clinical environment, if the systems are brought down by an attack, it wouldn’t be possible to migrate to the hot site location as the patients that would be being cared for cannot move. Duplicating patient databases might carry some worth, but the access systems local to the patients go down it wouldn’t help to have hardware duplicated elsewhere.</p>
+							<p></p>
+							<p>
+								References</p>
+							<p>
+								Mundy, A. (2021, November 29). Collaborative Learning Discussion 1. Retrieved from University of Essex Online - The Virtual Learning Environment: https://www.my-course.co.uk/mod/hsuforum/discuss.php?d=285456</p>
+							<p>
+								Necat, B. (2021, November 29). Collaborative Learning Discussion 1. Retrieved from University of Essex Online - The Virtual Learning Environment: https://www.my-course.co.uk/mod/hsuforum/discuss.php?d=285456</p>
+							<p>
+								Soni, R. (2021, February 12). 3 reasons why customer-focused enterprises should trust MFA. Retrieved from Security Info Watch: https://www.securityinfowatch.com/cybersecurity/information-security/managed-network-security/article/21210089/3-reasons-why-customerfocused-enterprises-should-trust-mfa</p>
+							<p>
+								Van Biljon, E. (2021, November 29). Collaborative Learning Discussion 1. Retrieved from University of Essex - The Virtual Learning Environment: https://www.my-course.co.uk/mod/hsuforum/discuss.php?d=285456</p>
 
 									<hr class="major" />
 
-									<h2>Magna etiam veroeros</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<h2>Collaborative Discussion 2</h2>
+							<h3>Initial Post</h3>
+							<p>
+								Group 2 were assigned allmytype.co.uk to investigate and analyse for security vulnerabilities.
+							</p>
+							<p> The first tool used was the Trace Route tool built into Windows (Gerend, et al., 2021) to track the route from my laptop to the webserver hosting the site. The tool revealed 13 hops from my laptop to the site with an average delay at each hop of about 46ms, as can be seen in Figure 1.</p>
+							
+							<img src="images/Screenshot 2021-12-19 232727.png" width="600" height="199" alt="Figure 1"/>
+							
+							<p>
+								The biggest delay is caused at hop 6 as the route goes through servers hosted by the ISP Cogentco.
+							</p>
+							<p>Using the tools from DNSChecker (DNSChecker, 2021) the main nameserver records (NS) are revealed to be ns1.a2hosting.com, ns2.a2hosting.com, ns3.a2hosting.com and ns4.a2hosting.com. Using the same investigation tools the MX record is revealed to be mail.allmytype.co.uk. The registrar of the domain is Enom LLC (enom.com), a domain reseller, whose details are redacted for privacy in the WHOIS database. Using the hosting checker tool by Hosting Checker (Hosting Checker, 2021) it’s revealed the page is hosted by A2hosting.com in the Netherlands. A note on A2 Hosting though is that they are based, and have their site hosted, in Ann Arbour, Michigan, USA. The Dutch data centre obviously being a location they utilise for their European customers.
+							</p>
+							<p>References</p>
+							<p>DNSChecker, 2021. DNSChecker. [Online]Available at: https://dnschecker.org/[Accessed 20 December 2021].</p>
+							<p>Gerend, J. et al., 2021. Microsoft Docs. [Online] Available at: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tracert [Accessed 19 December 2021].</p>
+							<p>Hosting Checker, 2021. Hosting Checker. [Online] Available at: https://hostingchecker.com/ [Accessed 20 December 2021].</p>
 
 									<hr class="major" />
 
